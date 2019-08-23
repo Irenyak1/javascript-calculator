@@ -1,0 +1,22 @@
+body{
+  background-color: black;
+}
+#main-div{
+    width: 70%;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: white;
+   
+}
+th, td {
+  vertical-align: top;
+}
+.output {
+    font-weight:bold;
+  }
+  #payment {
+    text-decoration:underline;
+  }
+  
+  

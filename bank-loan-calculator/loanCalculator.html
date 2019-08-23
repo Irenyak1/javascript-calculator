@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Loan Calculator</title>
+    <link rel="stylesheet" href="loanCalculator.css" />
+  </head>
+  <body>
+    <div id="main-div">
+      <table>
+        <tr>
+          <th>Enter Loan Data:</th>
+          <th></th>
+          <th>Loan Balance, Cumulative Equity, and Interest Payments</th>
+        </tr>
+        <tr>
+          <td>Amount of the loan ($):</td>
+          <td><input id="amount" onchange="calculateLoan();" /></td>
+          <td rowspan="8">
+            <img src="graph.png" alt="Graph" id="loanGraph" />
+          </td>
+        </tr>
+        <tr>
+          <td>Annual interest (%):</td>
+          <td><input id="annualint" onchange="calculateLoan();" /></td>
+        </tr>
+        <tr>
+          <td>Repayment period (years):</td>
+          <td><input id="period" onchange="calculateLoan();" /></td>
+        </tr>
+        <tr>
+          <td>Zipcode (to find lenders):</td>
+          <td><input id="zip" onchange="calculateLoan();" /></td>
+        </tr>
+        <tr>
+          <th>Approximate Payments:</th>
+          <td><button onclick="calculateLoan();">Calculate</button></td>
+        </tr>
+        <tr>
+          <td>Monthly payment:</td>
+          <td>$<span id="monthlyp" class="result"></span></td>
+        </tr>
+        <tr>
+          <td>Total payment:</td>
+          <td>$<span id="total" class="result"></span></td>
+        </tr>
+        <tr>
+          <td>Total interest:</td>
+          <td>$<span id="totalint" class="result"></span></td>
+        </tr>
+        <tr>
+          <th>Sponsors:</th>
+          <td colspan="2">
+            Apply for your loan with one of these fine lenders:
+            <ul>
+              <li><a href="#">Bank of JavaScript</a></li>
+              <li><a href="#">HTML Credit Union</a></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="loanCalculator.js"></script>
+  </body>
+</html>
