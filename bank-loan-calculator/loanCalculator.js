@@ -29,9 +29,9 @@ function calculateLoan() {
     }
     // Otherwise, if the user inputs an invalid value then anything is displayed.
     else {
-      monthlyp.innerHTML = "";
-      total.innerHTML = "";
-      totalint.innerHTML = "";
+      monthlyp.innerHTML = "No inputs provided";
+      total.innerHTML = "No inputs provided";
+      totalint.innerHTML = "No inputs provided";
   }
 };
   
